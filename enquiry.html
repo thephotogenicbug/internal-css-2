@@ -1,0 +1,178 @@
+<html>
+  <head>
+    <style>
+	 @keyframes mymenu{
+	   25%{backgroun:orange;}
+	   50%{background:lightgreen;}
+	   75%{background:purple;}
+	 }
+	  #nav{
+	     margin:0px;
+		 padding:15px;
+		 background:black;
+		 text-align:center;
+		 
+		 animation:mymenu;
+		 animation-iteration-count:infinite;
+		 animation-duration:10s;
+	  }
+	  
+	  #nav li{
+	      display:inline;
+		  padding:17px;
+		  
+	  }
+	  
+	  #nav li a {
+	     color:white;
+		 text-decoration:none;
+		 font-size:18px;
+	  }
+	  
+	  #nav li:hover{
+	       background:blue;
+	  }
+	    body{margin:0px;}
+		
+		#banner{
+		    font-size:60px;
+			text-align:center;
+			color:blue;
+			font-style:italic;
+			height:250px;
+			padding:100px;
+			background:pink;
+			text-transform:uppercase;
+		}
+		
+		.photo{
+		   margin:0.3%;
+		   width:19%;
+		   height:120px;
+		   
+		}
+		.photo:hover{
+		   opacity:0.5;
+		   border-radius:20px;
+		}
+		
+		#footer{
+		   background:black;
+		   color:white;
+		   text-align:center;
+		   padding:15px;
+		   height:100px;
+		   margin-top:40px;
+		   
+		}
+		#container{
+		   width:80%;
+		   margin:auto;
+		   min-height:500px;
+		}
+		
+		#twocols{
+		    column-count:2;
+		}
+		
+		.singleline{
+		  display:inline;
+		  margin:30px;
+		  text-align:center;
+		  color:blue;
+		  font-size:30px;
+		  font-style:italic;
+		}
+		
+		 #activemenu{
+	       background:blue; !important;
+		   }
+		   
+		   #inputblock{
+		      margin:auto;
+			  margin-top:30px;
+			  width:300px;
+			  padding:20px;
+			  border:2px solid orange;
+		   }
+		   
+		   #inputblock legend{
+		    background:orange;
+			color:green;
+			font-weight:bold;
+			padding:8px;
+		   }
+		   .smallinput{
+		       height:28px;
+			   width:100%;
+			   
+		   }
+		   
+		  tr{
+		    height:50px;
+			
+		  }
+		  
+		  .biginput{
+		   height:70px !important;
+		  }
+		  
+		  .smallinput:hover{
+		     border:2px solid red;
+			 cursor:pointer; /* ready to click */
+		  }
+		  
+		  #mybtn{
+		   background:blue;
+		   color:white;
+		   padding:10px;
+		   font-weight:bold;
+		   border:none;
+		   
+		   
+		  
+	</style>
+  </head>
+  <body>
+      <ul id="nav">
+          <li><a href="home.html">Home</a></li>
+		  <li ><a href="about.html">About us</a></li>
+		  <li ><a href="contact.html">Contact us</a></li>
+		  <li><a href="login.html">Login</a></li>
+		  <li><a href="register.html">Register</a></li>
+		  <li  id="activemenu"><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+	  <div id="container">
+	       <fieldset id="inputblock">
+		       <legend>Enquiry</legend>
+			   <table>
+			     <tr>
+			     <th>E-mail id</th>
+				  <td><input type="email" class="smallinput"/></td>
+				</tr>
+				 <tr>
+				   <th>Mobile</th>
+				   <td><input type="text" class="smallinput"/></td>
+				 </tr>
+				<tr>
+				   <th>Message</th>
+				   <td><textarea class="smallinput biginput"></textarea></td>
+				</tr>
+				<tr>
+				  <th>Password</th>
+				  <td><input type="password" class="smallinput"/></td>
+				</tr>
+			<tr>
+               <th colspan="2">
+			    <button id="mybtn">Send Message</button>
+			   </th>
+		  </tr>	
+			</table>
+		   </fieldset>		 
+	  </div>
+	  <div id="footer">
+	     <p>This is from footer !</p>
+	  </div>
+  </body>
+  
+</html>
